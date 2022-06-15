@@ -1,12 +1,32 @@
-<html>
-  <head> </head>
+html>
   <body>
     <h1>momokaのホームページ</h1>
 
     <h2>好きなこと</h2>
-    ここに好きなことを書く
+    <ol>
+      <li>テキスト</li>
+      <li>テキスト</li>
+    </ol>
 
-    <h2>アカウント</h2>
-    ここにアカウントのことを書く
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+    h2 {
+      color: #AABBCC; /*#カラーコード*/
+    }
+    ol{
+      background-color: lightgreen;
+      border-radius: 5px; /*角を丸くする*/
+      width: 300px  /*視覚の大きさを変える*/
+    }
+    </style>
+    <script>
+      function countUp() {
+      const count = document.getElementById("count"); // id="count"の要素を取得
+      const nextCount = (parseInt(count.innerText) + 1).toString(); // innerTextは文字列。これを数字にして+1してから文字列にする
+      count.innerText = nextCount; // id="count"の要素に文字列にする
+      }
+    </script>
   </body>
 </html>

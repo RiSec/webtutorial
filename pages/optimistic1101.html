@@ -1,3 +1,37 @@
 <h1>おぷてぃさんだぞ！</h1>
 nyanyanyanya〜僕は
-<S>ツイ廃です<S>
+<S>ツイ廃になりたい<S>
+<html>
+  <body>
+    <h1>おぷてぃのホームページ</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>睡眠</li>
+      <li>Twitter</li>
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+    h2 {
+      color :#008080
+    }
+    li {
+      color :#708090
+    }
+    ol {
+      Background-color :#f0f8ff
+     
+    }
+    </style>
+    <script>
+      function countUp() {
+      const count = document.getElementById("count"); 
+      const nextCount = (parseInt(count.innerText) + 1).toString(); 
+      count.innerText = nextCount; 
+      }
+    </script>
+  </body>
+</html>

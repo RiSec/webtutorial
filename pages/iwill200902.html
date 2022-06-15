@@ -1,10 +1,35 @@
-<html>
- <head>
-  <title>iwill</title>
- </head>
-   <hf/>
-   <h1>ABCDEFG</h1>
-    <h2>HIJKLMNOP</h2>
-   </hf>
- </html>
-    
+ <html>
+  <body>
+    <h1>iwillのホームページ</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>Rainbow six siage</li>
+      <li>???</li>
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+      h2 {
+      color: green; 
+    }
+    li {
+      color: #0000cd;
+    }
+    ol {
+      background-color: aquamarine;  
+      border-radius: 5px; 
+      width: 300px; 
+    }
+   </style>
+    <script>
+      function countUp() {
+      const count = document.getElementById("count"); 
+      const nextCount = (parseInt(count.innerText) + 1).toString(); 
+      count.innerText = nextCount; 
+      }
+    </script>
+  </body>
+</html>
