@@ -15,10 +15,11 @@
       <li>ラーメンを食べる</li>
       <li>会議室の椅子のネジをゆるめる</li>
     </ol>
+    
+    <button onclick="countUp()">押してくれー！！！</button>
 
     <p id="count">0</p>
-    <p id="more"></p>
-    <button onclick="countUp()">押してくれー！！！</button>
+    <div id="more"></div>
     
 
     <style>
@@ -43,7 +44,12 @@
         const nextCount = (parseInt(count.innerText) + 1).toString(); // 数字にして+1してから文字列にする
         count.innerText = nextCount + "回先輩におごってもらおうと思います．やったぁ！！"; // id="count"の要素に文字列を代入
         const more = document.getElementById("more");
-        if(nextCount % 10 == 0)more.innerText = "もっと押して！！！"
+        
+        const new_element = document.createElement('p');
+        if(nextCount % 10 == 0){
+          new_element.textContent = "もっと押して！！！";
+          more.appendChild(new_element);
+        }                                                                                                                                                                                                                                                                                
       }
     </script>
   </body>
