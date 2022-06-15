@@ -1,0 +1,33 @@
+＜html>
+  <body>
+    <h1>Toufukunのホームページ</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>カラオケ</li>
+      <li>写真</li>
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+    h2 {
+      color :blue;
+    }
+    ol {background :lightgreen;}
+    p {color: blue;}
+    
+    
+    </style>
+    <script>
+      function countUp() {
+      const count = document.getElementById("count");
+      const nextCount = (parseInt(count.innerText)+1).toString();
+       count.innerText = nextCount;
+       ver
+     
+      }
+    </script>
+  </body>
+</html>
