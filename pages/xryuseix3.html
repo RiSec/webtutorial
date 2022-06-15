@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <h1>xryuseixのホームページ</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>Twitter</li>
+      <li>ゲーム</li>
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+    h2 {
+      color: blue;
+    }
+    ol {
+      background-color: lightgreen;
+    }
+    </style>
+    <script>
+      function countUp() {
+        const count = document.getElementById("count"); // タグ
+        const nextCount = (parseInt(count.innerText) + 1).toString(); // 次の数字 0 -> 1
+        count.innerText = nextCount; // 代入
+      }
+    </script>
+  </body>
+</html>
