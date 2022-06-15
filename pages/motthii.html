@@ -1,2 +1,33 @@
-<h1>課題やだ～</h1>
-<strong>徹夜せず寝たい、、、</strong>
+<html>
+  <body>
+    <h1>もっちのホームページ</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>趣味</li>
+      <li>推し　いおりん</li>
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+      h2{
+        color:green;
+      }
+      ol{
+        background-color: lightblue;
+      }
+    </style>
+    <script>
+      function countUp() {
+        const count = document.getElementById("count");
+        const nextCount = (parseInt(count.innerText)+1).toString();
+        count.innerText = nextCount;     
+      }
+    </script>
+  </body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
