@@ -1,6 +1,56 @@
-<title>
-  るるです
-</title>
-<h1>
-  トプ画は墜落JKと廃人教師です。
-</h1>
+<html>
+  <body>
+    <h1>youxiのホームページ</h1>
+
+    <h2>好きなこと</h2>
+    
+    <ol>
+     ゆっくり過ごす
+    </ol>
+    
+    <p> </p>
+    <h3>
+    おすすめの漫画
+    </h3>
+    
+    <ol>
+    墜落JKと廃人教師
+    </ol>
+    
+    <h4>
+    追記
+    </h4>
+    
+    <ol>
+    Twitterアカウント(るる)のトプ画はJKの扇言(みこと)になります
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！？</button>
+
+    <style>
+    h2 {
+      color: blue;
+    }
+    ol{
+      background-color: lightblue;
+      border-radius: 10px;
+    }
+    </style>
+    
+    <style>
+    h3 {
+      color: lightpink;
+    }
+    </style>
+
+    <script>
+      function countUp() {
+     const count = document.getElementById("count"); // タグ
+      const nextCount = (parseInt(count.innerText) + 1).toString(); // 次の数字　0→1
+      count.innerText = nextCount; // 代入
+      }
+    </script>
+    
+  </body>
+</html>
