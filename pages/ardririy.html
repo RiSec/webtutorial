@@ -1,11 +1,46 @@
 <html>
   <body>
-    <h1> Its ardririy's page:D</h1>
-    nice try!
-    <br>
-    <a href= "https://twitter.com/ardririy" target="_blank">Follow me!</a>
-    <br>
-    not work it ↓ <br>
-    <a href"javascript:while(true) alert("I said 'Dont push me...:(' ");">Dont push me</a>
+    <h1>This is ardririy's page :D</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>ゲーム全般</li>
+      <li>読書</li>
+    </ol>
+
+    <p id="count">0</p>
+    <p id="str"></p>
+    <button onclick="countUp()">Dont click me!</button>
+    <button onClick="show()">What is this?</button>
+
+    <style>
+    h2 {
+      color: #AFDFE4;
+    }
+    ol {
+      background: #DDE3E4;
+      border-radius: 5px;
+      width: 300px;
+    }
+    </style>
+    <script>
+      function countUp() {
+      const count = document.getElementById("count");
+      const nextCount = (parseInt(count.innerText) + 1).toString();
+      const i = parseInt(count.innerText);
+      if(i == 10){
+      	count.innerText = "I say dont push me !";
+			}else if(count.innerText == "I say dont push me !"){
+      	count.innerText = "I say dont push me !";
+      }else{
+      	count.innerText = nextCount;
+      }
+    }
+      
+      function show() {
+      	const count = document.getElementById("str");
+        str.innerText = "{i_d0nt_th1nk_you_pu5h_left_butt0n}";
+      }
+    </script>
   </body>
 </html>
