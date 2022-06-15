@@ -1,0 +1,43 @@
+<!-- @format -->
+
+<html>
+  <body>
+  
+    <h1>そまのホームページ</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>ゲーム</li>
+      <li>Twitter</li>
+    </ol>
+
+    <p id="count">100</p>
+    <button onclick="countUp()">押せ！！</button>
+  </body>
+
+  <style>
+    h2 {
+      color: blue; /* 文字色を変える */
+    }
+    
+    h1{
+      color:green;
+      }
+    
+    li {
+      color: white;
+    }
+    ol {
+      background-color: black;  /* 背景色を変える */
+      border-radius: 5px; /* 5pxの角丸 */
+      width: 300px; /* 300px幅 */
+    }
+  </style>
+  <script>
+    function countUp() {
+      const count = document.getElementById("count"); // id="count"の要素を取得
+      const nextCount = (parseInt(count.innerText) - 1).toString(); // 数字にして+1してから文字列にする
+      count.innerText = nextCount; // id="count"の要素に文字列を代入
+    }
+  </script>
+</html>
