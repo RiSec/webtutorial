@@ -1,2 +1,27 @@
-<h1>RiST</h1>
-<h2>こんにちは</h2>
+  <li>漫画</li>
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+    h2 {
+      color: #0000cd;
+    }
+    ol {
+      background-color: lightgreen;
+    }
+   p {
+     color: red;
+   }
+    </style>
+    <script>
+      function countUp() {
+      const count =document.getElementById("count");
+      const nextCount = (parseInt(count.innerText)+1).toString();
+      count.innerText = nextCount;
+      
+      }
+    </script>
+  </body>
+</html>
