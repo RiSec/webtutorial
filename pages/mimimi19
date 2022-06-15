@@ -1,18 +1,38 @@
-<h1>
-aaaaaa
-</h1>
-<ol>
-<h4>
-1
-</h4>
-<h4>
-2
-</h4><h4>
-3
-</h4><h4>
-4
-</h4><h4>
-5
-</h4>
-</ol>
+<html>
+  <head> </head>
+  <body>
+    <h1>mimimiのホームページ</h1>
 
+    <h2>好きなこと</h2>
+    SUIMIN!
+    <ol>
+      <li>テキスト</li>
+      <li>テキスト</li>
+    </ol>
+
+    <h2>アカウント</h2>
+    ここにアカウントのことを書く
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+    h2{
+      color: #0000cd;
+      
+      }
+      ol {
+        background-color : lightgreen
+      }
+    
+    </style>
+    <script>
+      function countUp() {
+      const count = document.getElementById("count");
+      const nextCount = (parseInt(count.innerText)+1).toString();
+      count.innerText = nextCount;
+  
+      ver
+      }
+    </script>
+  </body>
+</html>
