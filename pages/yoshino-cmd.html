@@ -1,12 +1,23 @@
 <html>
-  <head> </head>
   <body>
-    <h1>ホームページへようこそ</h1>
+    <h1>よっしーのホームページ</h1>
 
     <h2>好きなこと</h2>
-    ここに好きなことを書く
+    <ol>
+      <li>テキスト</li>
+      <li>テキスト</li>
+    </ol>
 
-    <h2>アカウント</h2>
-    ここにアカウントのことを書く
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+ h2{color:blue;}ol{background-color:lightgreen}
+</style>
+    <script>
+      function countUp() { const count = document.getElementById("count"); // id="count"の要素を取得
+      const nextCount = (parseInt(count.innerText) + 1).toString(); // 数字にして+1してから文字列にする
+      count.innerText = nextCount; // id="count"の要素に文字列を代入
+ }   </script>
   </body>
 </html>
