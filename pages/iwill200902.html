@@ -25,7 +25,11 @@
     }
    </style>
     <script>
-      function countUp() {}
+      function countUp() {
+      const count = document.getElementById("count"); 
+      const nextCount = (parseInt(count.innerText) + 1).toString(); 
+      count.innerText = nextCount; 
+      }
     </script>
   </body>
 </html>
