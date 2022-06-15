@@ -1,1 +1,19 @@
-aaaaa
+<html>
+  <body>
+    <h1>芹波のホームページ</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>テキスト</li>
+      <li>テキスト</li>
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style></style>
+    <script>
+      function countUp() {}
+    </script>
+  </body>
+</html>
