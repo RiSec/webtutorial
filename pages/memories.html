@@ -1,12 +1,50 @@
 <html>
   <head>memoriesﾃﾞｽ</head>
   <body>
+    <h1>memoriesﾃﾞｪｽ</h1>
     <h1>三度の飯より飯が好き</h1>
     <!--
     ほんとはおひるねもすき
     -->
     
-    <h1>おすすめ</h1>
+    <h2>おすすめ</h2>
     <a href="https://example.com">kansha</a>
+    <h2>好きなこと</h2>
+    <ol>
+      <li>可読性の低いコードの生成</li>
+      <li>ラーメンを食べる</li>
+      <li>会議室の椅子のネジをゆるめる</li>
+    </ol>
+
+    <p id="count">0</p>
+    <p id="more"></p>
+    <button onclick="countUp()">押してくれー！！！</button>
+    
+
+    <style>
+      h1 {
+        color: maroon; /* 文字色を変える */
+      }
+      h2 {
+        color: lightgreen; /* 文字色を変える */
+      }
+      li {
+        color: #0000cd;
+      }
+      ol {
+        background-color: orchid;  /* 背景色を変える */
+        border-radius: 5px; /* 5pxの角丸 */
+        width: 300px; /* 300px幅 */
+      }
+    </style>
+    <script>
+      function countUp() {
+        const count = document.getElementById("count"); // id="count"の要素を取得
+        const nextCount = (parseInt(count.innerText) + 1).toString(); // 数字にして+1してから文字列にする
+        count.innerText = nextCount + "回先輩におごってもらおうと思います．やったぁ！！"; // id="count"の要素に文字列を代入
+        const more = document.getElementById("more");
+        if(nextCount % 10 == 0)more.innerText = "もっと押して！！！"
+      }
+    </script>
   </body>
 </html>
