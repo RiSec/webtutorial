@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <h1>Daikiのホームページ</h1>
+
+    <h2>好きなこと</h2>
+    <ol>
+      <li>ビート板のとも</li>
+      <li>テキスト</li>
+    </ol>
+
+    <p id="count">0</p>
+    <button onclick="countUp()">ここをクリック！</button>
+
+    <style>
+    h2{
+      color: blue;
+      }
+      ol {
+        background-color: lightgreen;
+      }
+    
+    
+    </style>
+    <script>
+      function countUp() {
+        const count = document.getElementById("count"); 
+        const nextCount = (parseInt(count.innerText) + 1).toString();
+        count.innerText = nextCount;
+      }
+    </script>
+  </body>
+</html>
